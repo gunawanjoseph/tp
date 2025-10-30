@@ -469,7 +469,7 @@
 
 .help-label {
     -fx-font-size: 20px;
-    -fx-text-fill: #a0aec0;       /* or your preferred color */
+    -fx-text-fill: #a0aec0;
     -fx-cursor: hand;
 }
 
@@ -479,10 +479,20 @@
 
 .file-label {
     -fx-font-size: 20px;
-    -fx-text-fill: white;       /* or your preferred color */
+    -fx-text-fill: white;
     -fx-cursor: hand;
 }
 
 .file-label:hover {
     -fx-underline: true;
+}
+
+.command-box-container {
+    -fx-background-color: #1e2a38;
+    -fx-padding: 0;
+}
+
+.command-box {
+    -fx-background-color: #2f3c4c;
+    -fx-text-fill: #a0aec0
 }

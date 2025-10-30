@@ -31,7 +31,7 @@
         <!-- Header with Logo and EduLink Text -->
         <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="10" VBox.vgrow="NEVER">
           <padding>
-            <Insets top="10" right="15" bottom="10" left="15" />
+            <Insets top="16" right="15" bottom="10" left="15" />
           </padding>
           <SVGPath content="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.18L19.17 9 12 12.82 4.83 9 12 5.18zM12 16l-6-3.27V17c0 1.66 2.69 3 6 3s6-1.34 6-3v-4.27L12 16z"
                    fill="white" scaleX="1.2" scaleY="1.2" styleClass="logo-icon"/>
@@ -42,17 +42,17 @@
             <padding>
               <Insets top = "0" right = "5" bottom = "0" left = "5"/>
             </padding>
-            <HBox spacing="40">
+            <HBox spacing="40" alignment="CENTER_RIGHT">
               <Label fx:id="fileLabel" text="Exit" onMouseClicked="#handleExit" styleClass="file-label"/>
               <Label fx:id="helpLabel" text="Help" onMouseClicked="#handleHelp" styleClass="help-label"/>
             </HBox>
           </VBox>
         </HBox>
 
-        <StackPane VBox.vgrow="NEVER" fx:id="commandBoxPlaceholder" styleClass="pane-with-border">
-          <padding>
-            <Insets top="5" right="10" bottom="5" left="10" />
-          </padding>
+        <StackPane VBox.vgrow="NEVER" fx:id="commandBoxPlaceholder" styleClass="command-box-container">
+            <padding>
+                <Insets top="16" right="10" bottom="16" left="10"/>
+            </padding>
         </StackPane>
 
         <StackPane VBox.vgrow="NEVER" fx:id="resultDisplayPlaceholder" styleClass="pane-with-border"
