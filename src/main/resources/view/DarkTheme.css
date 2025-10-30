@@ -1,6 +1,6 @@
 .background {
     -fx-background-color: derive(#1d1d1d, 20%);
-    background-color: #383838; /* Used in the default.html file */
+    background-color: #383838;
 }
 
 .label {
@@ -82,54 +82,55 @@
 }
 
 .split-pane {
-    -fx-border-radius: 1;
-    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
     -fx-background-color: derive(#1d1d1d, 20%);
 }
 
 .list-view {
     -fx-background-insets: 0;
     -fx-padding: 0;
-    -fx-background-color: derive(#1d1d1d, 20%);
+    -fx-background-color: #e8e9eb;
 }
 
 .list-cell {
     -fx-label-padding: 0 0 0 0;
-    -fx-graphic-text-gap : 0;
-    -fx-padding: 0 0 0 0;
+    -fx-graphic-text-gap: 0;
+    -fx-padding: 8 10 8 10;
+    -fx-background-color: #e8e9eb;
 }
 
 .list-cell:filled:even {
-    -fx-background-color: #3c3e3f;
+    -fx-background-color: #e8e9eb;
 }
 
 .list-cell:filled:odd {
-    -fx-background-color: #515658;
+    -fx-background-color: #e8e9eb;
 }
 
 .list-cell:filled:selected {
-    -fx-background-color: #424d5f;
+    -fx-background-color: #d0d3d8;
 }
 
 .list-cell:filled:selected #cardPane {
-    -fx-border-color: #3e7b91;
-    -fx-border-width: 1;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
 }
 
 .list-cell .label {
-    -fx-text-fill: white;
+    -fx-text-fill: #2d3748;
 }
 
 .cell_big_label {
     -fx-font-family: "Segoe UI Semibold";
     -fx-font-size: 16px;
-    -fx-text-fill: #010504;
+    -fx-text-fill: #1a202c;
 }
 
 .cell_small_label {
     -fx-font-family: "Segoe UI";
     -fx-font-size: 13px;
-    -fx-text-fill: #010504;
+    -fx-text-fill: #4a5568;
 }
 
 .stack-pane {
@@ -137,8 +138,8 @@
 }
 
 .pane-with-border {
-     -fx-background-color: derive(#1d1d1d, 20%);
-     -fx-border-color: derive(#1d1d1d, 10%);
+     -fx-background-color: #1e2a38;
+     -fx-border-color: #2f3c4c;
      -fx-border-top-width: 1px;
 }
 
@@ -147,14 +148,14 @@
 }
 
 .result-display {
-    -fx-background-color: transparent;
+    -fx-background-color: #2f3c4c;
     -fx-font-family: "Segoe UI Light";
     -fx-font-size: 13pt;
     -fx-text-fill: white;
 }
 
 .result-display .label {
-    -fx-text-fill: black !important;
+    -fx-text-fill: white;
 }
 
 .status-bar .label {
@@ -207,11 +208,6 @@
     -fx-background-color: black;
 }
 
-/*
- * Metro style Push Button
- * Author: Pedro Duque Vieira
- * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
- */
 .button {
     -fx-padding: 5 22 5 22;
     -fx-border-color: #e2e2e2;
@@ -282,11 +278,11 @@
 }
 
 .scroll-bar {
-    -fx-background-color: derive(#1d1d1d, 20%);
+    -fx-background-color: derive(#e8e9eb, -5%);
 }
 
 .scroll-bar .thumb {
-    -fx-background-color: derive(#1d1d1d, 50%);
+    -fx-background-color: #c0c4cc;
     -fx-background-insets: 3;
 }
 
@@ -308,8 +304,10 @@
 }
 
 #cardPane {
-    -fx-background-color: transparent;
+    -fx-background-color: white;
     -fx-border-width: 0;
+    -fx-background-radius: 8;
+    -fx-padding: 15 15 15 15;
 }
 
 #commandTypeLabel {
@@ -318,14 +316,14 @@
 }
 
 #commandTextField {
-    -fx-background-color: transparent #383838 transparent #383838;
+    -fx-background-color: transparent #2f3c4c transparent #2f3c4c;
     -fx-background-insets: 0;
-    -fx-border-color: #383838 #383838 #ffffff #383838;
+    -fx-border-color: #2f3c4c;
     -fx-border-insets: 0;
-    -fx-border-width: 1;
+    -fx-border-width: 0;
     -fx-font-family: "Segoe UI Light";
     -fx-font-size: 13pt;
-    -fx-text-fill: white;
+    -fx-text-fill: #a0aec0;
 }
 
 #filterField, #personListPanel, #personWebpage {
@@ -333,22 +331,23 @@
 }
 
 #resultDisplay .content {
-    -fx-background-color: transparent, #383838, transparent, #383838;
+    -fx-background-color: #2f3c4c;
     -fx-background-radius: 0;
 }
 
 #tags {
-    -fx-hgap: 7;
-    -fx-vgap: 3;
+    -fx-hgap: 5;
+    -fx-vgap: 5;
 }
 
 #tags .label {
-    -fx-text-fill: white;
-    -fx-background-color: #3e7b91;
-    -fx-padding: 1 3 1 3;
-    -fx-border-radius: 2;
-    -fx-background-radius: 2;
+    -fx-text-fill: #2d3748;
+    -fx-background-color: #d4e157;
+    -fx-padding: 3 8 3 8;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
     -fx-font-size: 11;
+    -fx-font-family: "Segoe UI Semibold";
 }
 
 #lessons {
@@ -453,12 +452,12 @@
 
 .header-bar {
     -fx-background-color: #1e2a38;
-    -fx-padding: 10 15 10 15;
+    -fx-padding: 15 100 15 100;
 }
 
 .app-title {
     -fx-font-family: "Segoe UI", Arial, sans-serif;
-    -fx-font-size: 24pt;
+    -fx-font-size: 26pt;
     -fx-font-weight: normal;
     -fx-text-fill: white;
 }
@@ -475,6 +474,7 @@
 
 .help-label:hover {
     -fx-underline: true;
+    -fx-text-fill: white;
 }
 
 .file-label {
@@ -489,10 +489,28 @@
 
 .command-box-container {
     -fx-background-color: #1e2a38;
-    -fx-padding: 0;
+    -fx-padding: 0 100 15 100;
 }
 
 .command-box {
     -fx-background-color: #2f3c4c;
-    -fx-text-fill: #a0aec0
+    -fx-text-fill: #a0aec0;
+    -fx-padding: 10 15 10 15;
+    -fx-background-radius: 5;
+}
+
+.sidebar-panel {
+    -fx-background-color: #e8e9eb;
+}
+
+.content-panel {
+    -fx-background-color: #f7f8fa;
+}
+
+.result-display-area {
+    -fx-background-color: #f7f8fa;
+}
+
+.details-area {
+    -fx-background-color: #f7f8fa;
 }
