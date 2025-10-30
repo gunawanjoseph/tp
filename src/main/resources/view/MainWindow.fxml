@@ -42,17 +42,9 @@
             <padding>
               <Insets top = "0" right = "5" bottom = "0" left = "5"/>
             </padding>
-            <HBox spacing="20">
-              <MenuBar>
-                <Menu fx:id="fileMenu" text="File">
-                    <MenuItem onAction="#handleExit" text="Exit"/>
-                </Menu>
-              </MenuBar>
-              <MenuBar>
-                <Menu fx:id="helpMenu" text="Help">
-                    <MenuItem fx:id="helpMenuItem" onAction="#handleHelp" text="Help"/>
-                </Menu>
-              </MenuBar>
+            <HBox spacing="40">
+              <Label fx:id="fileLabel" text="Exit" onMouseClicked="#handleExit" styleClass="file-label"/>
+              <Label fx:id="helpLabel" text="Help" onMouseClicked="#handleHelp" styleClass="help-label"/>
             </HBox>
           </VBox>
         </HBox>

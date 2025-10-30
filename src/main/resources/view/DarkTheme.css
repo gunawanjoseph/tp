@@ -466,3 +466,23 @@
 .logo-icon {
     -fx-fill: white;
 }
+
+.help-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #a0aec0;       /* or your preferred color */
+    -fx-cursor: hand;
+}
+
+.help-label:hover {
+    -fx-underline: true;
+}
+
+.file-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;       /* or your preferred color */
+    -fx-cursor: hand;
+}
+
+.file-label:hover {
+    -fx-underline: true;
+}
